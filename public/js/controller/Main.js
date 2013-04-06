@@ -27,7 +27,6 @@ var MainController = function($scope) {
         $scope.success = false;
         $scope.response = '';
         $scope.question = question[lang];
-        console.log('loadQuestion', index, question);
     };
 
     var validate = function() {
@@ -37,10 +36,8 @@ var MainController = function($scope) {
             question = $scope.dico[lastIndex];
 
         if (question[lang] === $scope.response.toUpperCase()) {
-            console.log('validate OK');
             $scope.success = true;
         } else {
-            console.log('validate KO');
             $scope.success = false;
         }
     };
