@@ -3,7 +3,7 @@ extends layout
 block content
     .container(ng:controller="MainController")
         h1 Bulgarian test
-        .row-fluid
+        .row-fluid.toolbar
             .span12
                 .btn-toolbar
                     button.btn.pull-right(ng:click="nextQuestion()") Next
@@ -12,7 +12,7 @@ block content
                         button.btn(ng:click="changeLanguage('bg')", ng:class="{active: questionLanguage == 'bg'}") Bulgarian
                         button.btn(ng:click="changeLanguage('fr')", ng:class="{active: questionLanguage == 'fr'}") French
                     .clearfix
-        .row-fluid
+        .row-fluid.form
             .span6
                 .question(ng:bind="question")
             .span6

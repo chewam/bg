@@ -6,16 +6,18 @@
     border: 1px solid #DDD;
 }
 
-textarea {
-    min-height: 170px;
-}
-
-.label-success {
+.toolbar .label-success {
     margin: 11px 5px 0 0;
 }
 
 @media (max-width: 480px) {
-    textarea {
+
+    .question {
+        min-height: 100px;
+    }
+
+    .form textarea {
         margin-top: 10px;
     }
+
 }

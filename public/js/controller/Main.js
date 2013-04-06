@@ -26,16 +26,17 @@ var MainController = function($scope) {
 
         $scope.success = false;
         $scope.response = '';
-        $scope.question = question[lang];
+        $scope.question = question[lang][0];
     };
 
     var validate = function() {
         var lang = $scope.responseLanguage,
             l = $scope.lastIndexes.length,
             lastIndex = $scope.lastIndexes[l - 1],
-            question = $scope.dico[lastIndex];
+            responses = $scope.dico[lastIndex][lang],
+            response = $scope.response.toUpperCase();
 
-        if (question[lang] === $scope.response.toUpperCase()) {
+        if (responses.indexOf(response) !== -1) {
             $scope.success = true;
         } else {
             $scope.success = false;
