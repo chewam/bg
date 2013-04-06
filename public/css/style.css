@@ -1,0 +1,21 @@
+.question {
+    padding: 10px;
+    min-height: 188px;
+    border-radius: 4px;
+    background-color: #EEE;
+    border: 1px solid #DDD;
+}
+
+textarea {
+    min-height: 170px;
+}
+
+.label-success {
+    margin: 11px 5px 0 0;
+}
+
+@media (max-width: 480px) {
+    textarea {
+        margin-top: 10px;
+    }
+}

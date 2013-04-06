@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .container(ng:controller="MainController")
+        h1 Bulgarian test
+        .row-fluid
+            .span12
+                .btn-toolbar
+                    button.btn.pull-right(ng:click="nextQuestion()") Next
+                    span.pull-right.label.label-success(ng:show="success") Success!
+                    .btn-group(data-toggle="buttons-radio")
+                        button.btn(ng:click="changeLanguage('bg')", ng:class="{active: questionLanguage == 'bg'}") Bulgarian
+                        button.btn(ng:click="changeLanguage('fr')", ng:class="{active: questionLanguage == 'fr'}") French
+                    .clearfix
+        .row-fluid
+            .span6
+                .question(ng:bind="question")
+            .span6
+                textarea.input-block-level(rows="10", ng:model="response", ng:change="onResponseChange()")
+
