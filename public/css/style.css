@@ -1,19 +1,27 @@
 .question {
     padding: 10px;
-    min-height: 188px;
+    min-height: 200px;
     border-radius: 4px;
     background-color: #EEE;
     border: 1px solid #DDD;
+}
+
+.form textarea {
+    min-height: 200px;
 }
 
 .toolbar .label-success {
     margin: 11px 5px 0 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
     .question {
-        min-height: 100px;
+        min-height: 0;
+    }
+
+    .form textarea {
+        min-height: 200px;
     }
 
     .form textarea {
