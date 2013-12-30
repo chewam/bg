@@ -133,4 +133,70 @@ var __DICO__ = [{
 }, {
     bg: ['КАЗВАМ'],
     fr: ['DIRE', 'APPELER']
+}, {
+    bg: ['ГОЛЯМ'],
+    fr: ['GROS']
+}, {
+    bg: ['МАЛЪК'],
+    fr: ['PETIT']
+}, {
+    bg: ['ВИСОК'],
+    fr: ['GRAND', 'HAUT']
+}, {
+    bg: ['НИСЪК'],
+    fr: ['FAIBLE', 'PAS GRAND']
+}, {
+    bg: ['ЕВТИН'],
+    fr: ['PAS CHER', 'MODIQUE', 'ECONOMIQUE']
+}, {
+    bg: ['СКЪЛ'],
+    fr: ['CHER']
+}, {
+    bg: ['ШИРОК'],
+    fr: ['LARGE']
+}, {
+    bg: ['ТЕСЕН'],
+    fr: ['ETROIT']
+}, {
+    bg: ['СТУДЕН'],
+    fr: ['FROID']
+}, {
+    bg: ['ТОПЕЛ'],
+    fr: ['CHAUD']
+}, {
+    bg: ['ГОРЕШ'],
+    fr: ['BRULANT']
+}, {
+    bg: ['СТАР'],
+    fr: ['VIEUX']
+}, {
+    bg: ['НОВ'],
+    fr: ['NOUVEAU']
+}, {
+    bg: ['МЛАД'],
+    fr: ['JEUNE']
+}, {
+    bg: ['СВЕТЕЛ'],
+    fr: ['BRILLANT']
+}, {
+    bg: ['ТЪМЕН'],
+    fr: ['SOMBRE']
+}, {
+    bg: ['ШУМЕН'],
+    fr: ['BRUYANT']
+}, {
+    bg: ['ТИХ'],
+    fr: ['CALME', 'SILENCIEU']
+}, {
+    bg: ['КЪС'],
+    fr: ['COURT']
+}, {
+    bg: ['ДЪЛЪГ'],
+    fr: ['LONG']
+}, {
+    bg: ['УДОБЕН'],
+    fr: ['CONFORTABLE']
+}, {
+    bg: ['НЕУДОБЕН'],
+    fr: ['INCONFORTABLE']
 }];
