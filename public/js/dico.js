@@ -1,105 +1,15 @@
 var __DICO__ = [{
-    bg: ['А'],
-    fr: ['A']
-}, {
-    bg: ['Б'],
-    fr: ['B']
-}, {
-    bg: ['Д'],
-    fr: ['D']
-}, {
-    bg: ['Е'],
-    fr: ['E']
-}, {
-    bg: ['Ф'],
-    fr: ['F']
-}, {
-    bg: ['Г'],
-    fr: ['G']
-}, {
-    bg: ['Х'],
-    fr: ['H']
-}, {
-    bg: ['И'],
-    fr: ['I']
-}, {
-    bg: ['Ж'],
-    fr: ['J']
-}, {
-    bg: ['К'],
-    fr: ['K']
-}, {
-    bg: ['Л'],
-    fr: ['L']
-}, {
-    bg: ['М'],
-    fr: ['M']
-}, {
-    bg: ['Н'],
-    fr: ['N']
-}, {
-    bg: ['О'],
-    fr: ['O']
-}, {
-    bg: ['П'],
-    fr: ['P']
-}, {
-    bg: ['Р'],
-    fr: ['R']
-}, {
-    bg: ['С'],
-    fr: ['S']
-}, {
-    bg: ['Т'],
-    fr: ['T']
-}, {
-    bg: ['В'],
-    fr: ['V']
-}, {
-    bg: ['З'],
-    fr: ['Z']
-}, {
-    bg: ['Я'],
-    fr: ['YA']
-}, {
-    bg: ['У'],
-    fr: ['OU']
-}, {
-    bg: ['Ш'],
-    fr: ['CH']
-}, {
-    bg: ['Щ'],
-    fr: ['CHT']
-}, {
-    bg: ['Й'],
-    fr: ['ILLE']
-}, {
-    bg: ['Ю'],
-    fr: ['YOU']
-}, {
-    bg: ['Ъ'],
-    fr: ['EUH']
-}, {
-    bg: ['Ц'],
-    fr: ['TZ']
-}, {
-    bg: ['Ч'],
-    fr: ['TCH']
-}, {
-    bg: ['СОФИЯ'],
-    fr: ['SOFIA']
-}, {
     bg: ['ДОБРЕ'],
     fr: ["D'ACCORD", 'OK']
 }, {
     bg: ['ДОБЕР ДЕН'],
-    fr: ['BONNE JOURNEE']
+    fr: ['BONJOUR']
 }, {
     bg: ['ДОБЕР ВЕЧЕР'],
-    fr: ['BON SOIR']
+    fr: ['BONSOIR']
 }, {
     bg: ['ДОБРО УТРО'],
-    fr: ['BONJOUR']
+    fr: ['BON MATIN']
 }, {
     bg: ['ДА'],
     fr: ['OUI']
@@ -107,6 +17,123 @@ var __DICO__ = [{
     bg: ['НЕ'],
     fr: ['NON']
 }, {
-    bg: ['ЗДРАСТИ'],
+    bg: ['ЗДРАСТИ', 'ЗДРАВЕЙ'],
     fr: ['SALUT']
+}, {
+    bg: ['ЧЕТА'],
+    fr: ['LIRE']
+}, {
+    bg: ['УЧА'],
+    fr: ['APPRENDRE']
+}, {
+    bg: ['ПЕЯ'],
+    fr: ['CHANTER']
+}, {
+    bg: ['ЛЕЖА'],
+    fr: ["S'ALONGER"]
+}, {
+    bg: ['МИЯ'],
+    fr: ['LAVER']
+}, {
+    bg: ['СТОЯ'],
+    fr: ['RESTER']
+}, {
+    bg: ['ЗНАЯ'],
+    fr: ['SAVOIR']
+}, {
+    bg: ['ИМАМ'],
+    fr: ['AVOIR']
+}, {
+    bg: ['ИГРАЯ'],
+    fr: ['JOUER']
+}, {
+    bg: ['ТЪРСЯ'],
+    fr: ['CHERCHER']
+}, {
+    bg: ['ХОДЯ', 'ОТИВАМ', 'ВЪРВЯ'],
+    fr: ['ALLER']
+}, {
+    bg: ['БРОЯ'],
+    fr: ['COMPTER']
+}, {
+    bg: ['ЗАТВАРЯМ'],
+    fr: ['FERMER']
+}, {
+    bg: ['РАБОТЯ'],
+    fr: ['TRAVAILLER']
+}, {
+    bg: ['ОБЯДВАМ'],
+    fr: ['DEJEUNER']
+}, {
+    bg: ['ГОВОРЯ'],
+    fr: ['PARLER']
+}, {
+    bg: ['ИДВАМ'],
+    fr: ['VENIR']
+}, {
+    bg: ['ЖИВЕЯ'],
+    fr: ['VIVRE']
+}, {
+    bg: ['ВЗЕМАМ'],
+    fr: ['PRENDRE']
+}, {
+    bg: ['МЪЛЧА'],
+    fr: ['ETRE SILENCIEU']
+}, {
+    bg: ['ВИЖДАМ'],
+    fr: ['VOIR']
+}, {
+    bg: ['ДЪРЖА'],
+    fr: ['GARDER']
+}, {
+    bg: ['ЧАКАМ'],
+    fr: ['PATIENTER']
+}, {
+    bg: ['МИСЛЯ'],
+    fr: ['PENSER']
+}, {
+    bg: ['ОТГОВАРЯМ'],
+    fr: ['REPONDRE']
+}, {
+    bg: ['РАЗГОВАРЯМ'],
+    fr: ['PARLER']
+}, {
+    bg: ['ГРЕША'],
+    fr: ['FAIRE UNE ERREUR', 'FAUTER']
+}, {
+    bg: ['РАЗБИРАМ'],
+    fr: ['COMPRENDRE']
+}, {
+    bg: ['ВЕЧЕРЯМ'],
+    fr: ['DINER']
+}, {
+    bg: ['СТРОЯ'],
+    fr: ['CONSTRUIRE']
+}, {
+    bg: ['ИЗЛИЗАМ'],
+    fr: ['SORTIR']
+}, {
+    bg: ['ПОМАГАМ'],
+    fr: ['AIDER']
+}, {
+    bg: ['ПРАВЯ'],
+    fr: ['FAIRE']
+}, {
+    bg: ['ОТВАРЯМ'],
+    fr: ['OUVRIR']
+}, {
+    bg: ['ПИТАМ'],
+    fr: ['INTERROGER']
+}, {
+    bg: ['ПИЯ'],
+    fr: ['BOIRE']
+}, {
+    bg: ['БЛАГОДАРЯ'],
+    fr: ['REMERCIER']
+}, {
+    bg: ['ВЛИЗАМ'],
+    fr: ['ENTRER']
+}, {
+    bg: ['КАЗВАМ'],
+    fr: ['DIRE', 'APPELER']
 }];
