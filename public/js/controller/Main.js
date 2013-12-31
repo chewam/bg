@@ -1,4 +1,19 @@
-var MainController = function($scope) {
+var app = angular.module('bgTest', []);
+
+app.directive('focus', function() {
+    return {
+        link: function($scope, el, attrs) {
+            $scope.$watch(attrs.focus, function(value) {
+                if (value === true) {
+                    el[0].focus();
+                    $scope[attrs.focus] = false;
+                }
+            });
+        }
+    };
+});
+
+var MainController = function($scope, $timeout) {
 
     var getRandomIndex = function(from, to) {
         var l = $scope.lastIndexes.length,
@@ -24,8 +39,9 @@ var MainController = function($scope) {
         $scope.lastIndexes.push(index);
         question = $scope.dico[index];
 
-        $scope.success = false;
         $scope.response = '';
+        $scope.success = false;
+        $scope.focusTextarea = true;
         $scope.question = question[lang][0];
     };
 
@@ -36,11 +52,7 @@ var MainController = function($scope) {
             responses = $scope.dico[lastIndex][lang],
             response = $scope.response.toUpperCase();
 
-        if (responses.indexOf(response) !== -1) {
-            $scope.success = true;
-        } else {
-            $scope.success = false;
-        }
+        $scope.success = !!(responses.indexOf(response) !== -1);
     };
 
     var setLanguage = function(lang) {
@@ -52,12 +64,38 @@ var MainController = function($scope) {
         }
     };
 
+    var showResult = function(callback) {
+        if ($scope.success === false) {
+            var lang = $scope.responseLanguage,
+                l = $scope.lastIndexes.length,
+                lastIndex = $scope.lastIndexes[l - 1],
+                response = $scope.dico[lastIndex][lang][0];
+
+            $scope.errorCount++;
+            $timeout(callback, 2000);
+            $scope.success = 'error';
+            $scope.question = response;
+        } else {
+            $scope.successCount++;
+            callback();
+        }
+    };
+
+    $scope.reset = function() {
+        $scope.errorCount = 0;
+        $scope.successCount = 0;
+        $scope.lastIndexes.length = 0;
+        loadQuestion();
+    };
+
     $scope.onResponseChange = function() {
         validate();
     };
 
     $scope.nextQuestion = function() {
-        loadQuestion();
+        showResult(function() {
+            loadQuestion();
+        });
     };
 
     $scope.changeLanguage = function(lang) {
@@ -65,6 +103,8 @@ var MainController = function($scope) {
         loadQuestion();
     };
 
+    $scope.errorCount = 0;
+    $scope.successCount = 0;
     $scope.dico = __DICO__;
     $scope.lastIndexes = [];
     $scope.questionLanguage = 'bg';

@@ -1,20 +1,29 @@
 extends layout
 
 block content
+    .header
+        .container
+            h1 БЪЛГАРСКИ ТЕСТ
     .container(ng:controller="MainController")
-        h1 Bulgarian test
-        .row-fluid.toolbar
-            .span12
-                .btn-toolbar
-                    button.btn.pull-right(ng:click="nextQuestion()") Next
-                    span.pull-right.label.label-success(ng:show="success") Success!
-                    .btn-group(data-toggle="buttons-radio")
-                        button.btn(ng:click="changeLanguage('bg')", ng:class="{active: questionLanguage == 'bg'}") Bulgarian
-                        button.btn(ng:click="changeLanguage('fr')", ng:class="{active: questionLanguage == 'fr'}") French
-                    .clearfix
-        .row-fluid.form
-            .span6
-                .question(ng:bind="question")
-            .span6
-                textarea.input-block-level(ng:model="response", ng:change="onResponseChange()")
-
+        .row.toolbar
+            .col-md-11.col-xs-10
+                .btn-group(data-toggle="buttons-radio")
+                    button.btn.btn-default(type="button", ng:click="changeLanguage('bg')", ng:class="{active: questionLanguage == 'bg'}") Бг
+                    button.btn.btn-default(type="button", ng:click="changeLanguage('fr')", ng:class="{active: questionLanguage == 'fr'}") Fr
+                button.btn.btn-default.reset(type="button", ng:click="reset()")
+                    span.glyphicon.glyphicon-refresh
+                row.stats
+                    .col-md-4.col-xs-4
+                        .count {{successCount}}
+                        div success
+                    .col-md-4.col-xs-4
+                        .count {{errorCount}}
+                        div errors
+            .col-md-1.col-xs-2
+                button.btn.btn-default.pull-right(type="button", ng:click="nextQuestion()")
+                    span.glyphicon.glyphicon-chevron-right
+        .row
+            .col-md-6
+                .alert(ng:bind="question", ng:class="{true:'alert-success', false:'alert-info', error:'alert-danger'}[success]")
+            .col-md-6
+                textarea.form-control(ng:model="response", ng:change="onResponseChange()", focus="focusTextarea", ng:disabled="success == 'error'")
