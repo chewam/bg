@@ -199,4 +199,52 @@ var __DICO__ = [{
 }, {
     bg: ['НЕУДОБЕН'],
     fr: ['INCONFORTABLE']
+}, {
+    bg: ['зеле'],
+    fr: ['chou']
+}, {
+    bg: ['морков'],
+    fr: ['carotte']
+}, {
+    bg: ['целина'],
+    fr: ['celeri']
+}, {
+    bg: ['магданоз'],
+    fr: ['persil']
+}, {
+    bg: ['копър'],
+    fr: ['aneth']
+}, {
+    bg: ['босилек'],
+    fr: ['basilic']
+}, {
+    bg: ['праз лук'],
+    fr: ['poireau']
+}, {
+    bg: ['чушка'],
+    fr: ['poivre']
+}, {
+    bg: ['краставица'],
+    fr: ['concombre']
+}, {
+    bg: ['домат'],
+    fr: ['tomate']
+}, {
+    bg: ['гъби'],
+    fr: ['champigons']
+}, {
+    bg: ['грах'],
+    fr: ['pois']
+}, {
+    bg: ['боб'],
+    fr: ['haricots']
+}, {
+    bg: ['леща'],
+    fr: ['lentille']
+}, {
+    bg: ['ряпа'],
+    fr: ['navet']
+}, {
+    bg: ['цвекло'],
+    fr: ['betterave']
 }];
